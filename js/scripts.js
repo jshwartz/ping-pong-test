@@ -27,4 +27,8 @@ $(document).ready(function() {
 
   var userNumber = parseInt(prompt("Enter a number to ping-pong!"));
 
+  for (var i = 1; i <= userNumber; i++) {
+    $("ul#list").append("<li>" + i + "</li>")
+  };
+
 });
