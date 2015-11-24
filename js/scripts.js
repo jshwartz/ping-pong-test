@@ -25,4 +25,6 @@ var divisible5 = function(userNumber) {
 
 $(document).ready(function() {
 
+  var userNumber = parseInt(prompt("Enter a number to ping-pong!"));
+
 });
