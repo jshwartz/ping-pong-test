@@ -25,19 +25,24 @@ var divisible5 = function(userNumber) {
 
 $(document).ready(function() {
 
-  var userNumber = parseInt(prompt("Enter a number to ping-pong!"));
+  $("form#numberInput").submit(function(event) {
 
+    $("ul#list").text("");
 
-  debugger;
-  for (var i = 1; i <= userNumber; i++) {
-    if (divisible15(i)) {
-      $("ul#list").append("<li>" + "ping-pong" + "</li>");
-    } else if (divisible3(i)) {
-      $("ul#list").append("<li>" + "ping" + "</li>");
-    } else if (divisible5(i)) {
-      $("ul#list").append("<li>" + "pong" + "</li>");
-    } else     
-    $("ul#list").append("<li>" + i + "</li>");
-  };
+    var userNumber = $("input#number").val();
 
+    debugger;
+    for (var i = 1; i <= userNumber; i++) {
+      if (divisible15(i)) {
+        $("ul#list").append("<li>" + "ping-pong" + "</li>");
+      } else if (divisible3(i)) {
+        $("ul#list").append("<li>" + "ping" + "</li>");
+      } else if (divisible5(i)) {
+        $("ul#list").append("<li>" + "pong" + "</li>");
+      } else
+      $("ul#list").append("<li>" + i + "</li>");
+    };
+
+    event.preventDefault();
+  });
 });
