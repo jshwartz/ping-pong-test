@@ -18,6 +18,14 @@ h4 {
   color: white;
 }
 
+
+.stretcher {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+
 body {
   background-color: #D8D8D8;
 }
@@ -29,6 +37,7 @@ body {
 
 .sidebar {
   background-color: #04B45F;
+  height: 100%;
 }
 
 .spacer {
