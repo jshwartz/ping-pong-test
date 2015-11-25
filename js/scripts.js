@@ -1,13 +1,13 @@
-var divisible15 = function(userNumber) {
-  return (userNumber % 15 === 0);
+var divisible15 = function(indexNumber) {
+  return (indexNumber % 15 === 0);
 };
 
-var divisible3 = function(userNumber) {
-  return (userNumber % 3 === 0);
+var divisible3 = function(indexNumber) {
+  return (indexNumber % 3 === 0);
 };
 
-var divisible5 = function(userNumber) {
-  return (userNumber % 5 === 0);
+var divisible5 = function(indexNumber) {
+  return (indexNumber % 5 === 0);
 };
 
 
