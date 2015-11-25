@@ -1,6 +1,6 @@
-# Ping-Pong
----
+# Ping-Pong #
 #### By: Jacob Shwartz
+
 Ping Pong is a sample JavaScript application for demonstrating basic proficiency in JavaScript, jQuery, Git, Markdown, HTML, Bootstrap, CSS, and BDD.
 
 A user enter a number and is shown a range of numbers from 1 to the number entered with the following exceptions:
@@ -10,11 +10,11 @@ A user enter a number and is shown a range of numbers from 1 to the number enter
 - Numbers divisible by 15 are replaced with "pingpong"
 
 ## Installation ##
----
+
 Install Ping-Pong by cloning this repository:
 
         https://github.com/
 
 ## Licence ##
-------
+
 MIT Licence. Copyright 2015 Epicodus  
