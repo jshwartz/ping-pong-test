@@ -3,11 +3,11 @@ var divisible15 = function(userNumber) {
 };
 
 var divisible3 = function(userNumber) {
-  return (userNumber % 3 === 0)
+  return (userNumber % 3 === 0);
 };
 
 var divisible5 = function(userNumber) {
-  return (userNumber % 5 === 0)
+  return (userNumber % 5 === 0);
 };
 
 
