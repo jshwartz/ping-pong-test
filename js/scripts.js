@@ -1,25 +1,13 @@
 var divisible15 = function(userNumber) {
-  if (userNumber % 15 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return (userNumber % 15 === 0);
 };
 
 var divisible3 = function(userNumber) {
-  if (userNumber % 3 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return (userNumber % 3 === 0)
 };
 
 var divisible5 = function(userNumber) {
-  if (userNumber % 5 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return (userNumber % 5 === 0)
 };
 
 
@@ -27,20 +15,20 @@ $(document).ready(function() {
 
   $("form#numberInput").submit(function(event) {
 
-    $("ul#list").text("");
-
     var userNumber = $("input#number").val();
-    var listAppend = $("ul#list");
+    var listIdTag = $("ul#list");
+
+    listIdTag.text("");
 
     for (var i = 1; i <= userNumber; i++) {
       if (divisible15(i)) {
-        listAppend.append("<li>" + "ping-pong" + "</li>");
+        listIdTag.append("<li>" + "pingpong" + "</li>");
       } else if (divisible3(i)) {
-        listAppend.append("<li>" + "ping" + "</li>");
+        listIdTag.append("<li>" + "ping" + "</li>");
       } else if (divisible5(i)) {
-        listAppend.append("<li>" + "pong" + "</li>");
+        listIdTag.append("<li>" + "pong" + "</li>");
       } else
-        listAppend.append("<li>" + i + "</li>");
+        listIdTag.append("<li>" + i + "</li>");
     };
 
     event.preventDefault();
