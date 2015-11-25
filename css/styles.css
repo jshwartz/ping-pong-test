@@ -27,7 +27,11 @@ h4 {
 
 
 body {
-  background-color: #D8D8D8;
+  background-color: #eeeeee;
+}
+
+.btn {
+  background-color: #c0c0c0;
 }
 
 .header {
