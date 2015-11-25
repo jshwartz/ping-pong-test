@@ -13,7 +13,7 @@ A user enter a number and is shown a range of numbers from 1 to the number enter
 
 Install Ping-Pong by cloning this repository:
 
-        https://github.com/
+        https://github.com/jshwartz/ping-pong-test.git
 
 ## Licence ##
 
