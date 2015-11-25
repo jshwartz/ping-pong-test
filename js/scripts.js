@@ -30,17 +30,17 @@ $(document).ready(function() {
     $("ul#list").text("");
 
     var userNumber = $("input#number").val();
+    var listAppend = $("ul#list");
 
-    debugger;
     for (var i = 1; i <= userNumber; i++) {
       if (divisible15(i)) {
-        $("ul#list").append("<li>" + "ping-pong" + "</li>");
+        listAppend.append("<li>" + "ping-pong" + "</li>");
       } else if (divisible3(i)) {
-        $("ul#list").append("<li>" + "ping" + "</li>");
+        listAppend.append("<li>" + "ping" + "</li>");
       } else if (divisible5(i)) {
-        $("ul#list").append("<li>" + "pong" + "</li>");
+        listAppend.append("<li>" + "pong" + "</li>");
       } else
-      $("ul#list").append("<li>" + i + "</li>");
+        listAppend.append("<li>" + i + "</li>");
     };
 
     event.preventDefault();
